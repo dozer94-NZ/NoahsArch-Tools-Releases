@@ -14,11 +14,11 @@ Revit tools by Noah, for Revit 2024, 2025, 2026 and 2027. This release contains 
 4. Click through the installer. It finds the Revit versions on your PC and installs for each.
 5. Start Revit. The first time, Revit asks whether to load **NoahsArch Tools** from an unknown publisher: choose **Always Load**.
 
-You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with one button, **NoahsArch Hub** (the ark). Click it to open a tool, see your version and install updates.
+You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with one button, **Noah's Arch** (the ark). Click it to open a tool, see your version and install updates.
 
 ## Updates
 
-When there's a new version, the Hub button changes to **Update available**. Open the Hub and click **Update**. The update downloads and installs by itself as soon as you close Revit; start Revit again afterwards.
+When there's a new version, the Noah's Arch button changes to **Update available**. Open the Hub and click **Update**. The update downloads and installs by itself as soon as you close Revit; start Revit again afterwards.
 
 To remove NoahsArch Tools: Windows **Settings → Apps → Installed apps → NoahsArch Tools → Uninstall**.
 
@@ -26,7 +26,7 @@ To remove NoahsArch Tools: Windows **Settings → Apps → Installed apps → No
 
 ## NoFilter
 
-Open a project view (plan, section, 3D…), click **NoahsArch Hub** on the Add-Ins tab and choose **NoFilter**. The window floats next to Revit and follows the view you're in. It only works in projects, not in the family editor.
+Open a project view (plan, section, 3D…), click **Noah's Arch** on the Add-Ins tab and choose **NoFilter**. The window floats next to Revit and follows the view you're in. It only works in projects, not in the family editor.
 
 The window has three columns: **what to filter** on the left, **the rules** in the middle, **how it looks** on the right.
 
@@ -58,6 +58,8 @@ The window has three columns: **what to filter** on the left, **the rules** in t
 ### 3. Set the look (right)
 
 - Quick presets: **Highlight red**, **Grey out**, **Hide**, **Clear**.
+- **Your own presets:** set up a look, click **+ Save as preset** and give it a name. It appears as a lilac chip after the built-in four; click it to use it. Right-click it to **Update with current settings**, **Rename**, **Share to Fimble filters** or **Delete**. Saving keeps everything except **Enable filter**.
+- **Fimble presets:** looks shared by colleagues appear in a peach **FIMBLE** row underneath. Right-click one to copy it to your own presets.
 - **Enable filter**, **Visible**, **Halftone**.
 - Projection/surface and cut: line pattern, colour, weight; foreground and background patterns and colours; transparency.
 - **Copy overrides from another filter…** takes the look from a filter already on the view.
@@ -70,10 +72,11 @@ The window has three columns: **what to filter** on the left, **the rules** in t
 | **Save to project** | Keeps it as a normal Revit filter under the name at the top. |
 | **Apply to view template ▾** | Adds it to view templates. The active view's template is listed first and ticked; tick others. It shows how many views will be affected. |
 | **Apply to other views…** | Adds it to views you tick. Views controlled by a template are greyed out: use the template option for those. |
-| **Discard draft** | Removes the draft from the view and starts again. |
+| **Discard draft** | Removes the draft from the view and resets everything (categories, searches, rules, look) so you can start fresh. |
 
 - **Name:** filled in automatically from your rules (e.g. `DOOR_Width LT 200 AND (FireRating EQ 60 OR Height GT 1800)`). Type your own if you like; **Reset to auto** brings the automatic one back. Revit names can't contain `\ : { } [ ] | ; < > ? ` ~`.
 - **Views with a template:** if the view's template controls filters, NoFilter applies to the view through **Temporary View Properties** (purple frame), so the template isn't changed. Use **Apply to view template** to change the template itself.
+- New filters go to the **top** of the view's or template's filter list, so filters already there can't overrule them. The others keep their order underneath.
 - Every action is one undo step in Revit, named "NoahsArch: NoFilter …".
 - Closing NoFilter removes an unsaved draft.
 
@@ -89,6 +92,7 @@ The window has three columns: **what to filter** on the left, **the rules** in t
   - **Edit everywhere**: your changes update that filter in every view and template that uses it (the bar shows how many).
   - **Duplicate & edit**: work on a copy; the original stays as it is.
 - Right-click a filter: **Remove from this view**, **Save as preset**.
+- **Several at once:** tick filters, then right-click any filter: **Remove ticked from this view**, **Remove ticked from view template…** (permanent, for every view using that template), **Save ticked as presets**, **Clear ticks**. Export ticked filters from **Import ▾**.
 - Filters made in Revit with groups inside groups open with read-only rules; you can still change their look.
 
 ### 6. Import, presets and the Fimble filters
