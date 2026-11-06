@@ -14,7 +14,7 @@ Revit tools by Noah, for Revit 2024, 2025, 2026 and 2027. This release contains 
 4. Click through the installer. It finds the Revit versions on your PC and installs for each.
 5. Start Revit. The first time, Revit asks whether to load **NoahsArch Tools** from an unknown publisher: choose **Always Load**.
 
-You'll find a **NoahsArch Tools** panel on the **NoahsArch** tab with two buttons:
+You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with two buttons:
 
 | Button | What it does |
 |---|---|
@@ -129,7 +129,7 @@ On Noah's PC that's `C:\OneDrive\Fimble B.V\Fimble - Wiki - Documents\02 Kick of
 
 ## Something not working?
 
-- **No NoahsArch tab after installing:** close Revit completely (check the taskbar) and start it again. Revit loads add-ins at startup.
+- **No NoahsArch Tools panel on the Add-Ins tab after installing:** close Revit completely (check the taskbar) and start it again. Revit loads add-ins at startup.
 - **"This view can't have filters":** schedules, sheets and legends can't; switch to a plan, section, elevation or 3D view.
 - **A rule shows "not available":** that parameter isn't shared by all ticked categories; untick the extra category or pick another parameter.
 - Anything else: send Noah the version (shown in the Hub) and a screenshot.
