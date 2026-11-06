@@ -1,6 +1,6 @@
 # NoahsArch Tools
 
-Revit tools by Noah, for Revit 2024, 2025, 2026 and 2027. This release contains **Filter Canvas**: build, apply and save view filters and their graphics overrides from one floating window, instead of going through Filters and Visibility/Graphics dialogs.
+Revit tools by Noah, for Revit 2024, 2025, 2026 and 2027. This release contains **NoFilter**: build, apply and save view filters and their graphics overrides from one floating window, instead of going through Filters and Visibility/Graphics dialogs.
 
 **Download:** the latest `NoahsArch-Tools-Setup-<version>.exe` is under **Releases** on this page.
 
@@ -14,12 +14,7 @@ Revit tools by Noah, for Revit 2024, 2025, 2026 and 2027. This release contains 
 4. Click through the installer. It finds the Revit versions on your PC and installs for each.
 5. Start Revit. The first time, Revit asks whether to load **NoahsArch Tools** from an unknown publisher: choose **Always Load**.
 
-You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with two buttons:
-
-| Button | What it does |
-|---|---|
-| **NoahsArch Hub** | Lists the tools, shows your version and installs updates |
-| **Filter Canvas** | Opens Filter Canvas |
+You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with one button, **NoahsArch Hub** (the ark). Click it to open a tool, see your version and install updates.
 
 ## Updates
 
@@ -29,9 +24,9 @@ To remove NoahsArch Tools: Windows **Settings → Apps → Installed apps → No
 
 ---
 
-## Filter Canvas
+## NoFilter
 
-Open a project view (plan, section, 3D…) and click **Filter Canvas**. The window floats next to Revit and follows the view you're in. It only works in projects, not in the family editor.
+Open a project view (plan, section, 3D…), click **NoahsArch Hub** on the Add-Ins tab and choose **NoFilter**. The window floats next to Revit and follows the view you're in. It only works in projects, not in the family editor.
 
 The window has three columns: **what to filter** on the left, **the rules** in the middle, **how it looks** on the right.
 
@@ -78,9 +73,9 @@ The window has three columns: **what to filter** on the left, **the rules** in t
 | **Discard draft** | Removes the draft from the view and starts again. |
 
 - **Name:** filled in automatically from your rules (e.g. `DOOR_Width LT 200 AND (FireRating EQ 60 OR Height GT 1800)`). Type your own if you like; **Reset to auto** brings the automatic one back. Revit names can't contain `\ : { } [ ] | ; < > ? ` ~`.
-- **Views with a template:** if the view's template controls filters, Filter Canvas applies to the view through **Temporary View Properties** (purple frame), so the template isn't changed. Use **Apply to view template** to change the template itself.
-- Every action is one undo step in Revit, named "NoahsArch: Filter Canvas …".
-- Closing Filter Canvas removes an unsaved draft.
+- **Views with a template:** if the view's template controls filters, NoFilter applies to the view through **Temporary View Properties** (purple frame), so the template isn't changed. Use **Apply to view template** to change the template itself.
+- Every action is one undo step in Revit, named "NoahsArch: NoFilter …".
+- Closing NoFilter removes an unsaved draft.
 
 **Select and isolate**
 
@@ -122,8 +117,8 @@ Fimble's shared filters live in SharePoint:
 On Noah's PC that's `C:\OneDrive\Fimble B.V\Fimble - Wiki - Documents\02 Kick off\02_TEMPLATE\FIMBLE filters`.
 
 - Sync that SharePoint library to your PC with OneDrive (**Sync** or **Add shortcut to My files** in SharePoint).
-- Filter Canvas finds the folder by itself in the usual OneDrive places.
-- If it's somewhere else, open **Settings** in Filter Canvas and paste the folder path.
+- NoFilter finds the folder by itself in the usual OneDrive places.
+- If it's somewhere else, open **Settings** in NoFilter and paste the folder path.
 
 ---
 
