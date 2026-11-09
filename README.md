@@ -58,8 +58,8 @@ The window has three columns: **what to filter** on the left, **the rules** in t
 ### 3. Set the look (right)
 
 - Quick presets: **Highlight red**, **Grey out**, **Hide**, **Clear**.
-- **Your own presets:** set up a look, click **+ Save as preset** and give it a name. It appears as a lilac chip after the built-in four; click it to use it. Right-click it to **Update with current settings**, **Rename**, **Share to Fimble filters** or **Delete**. Saving keeps everything except **Enable filter**.
-- **Fimble presets:** looks shared by colleagues appear in a peach **FIMBLE** row underneath. Right-click one to copy it to your own presets.
+- **Your own presets:** set up a look, click **+ Save as preset** and give it a name. It appears as a lilac chip after the built-in four; click it to use it. Right-click it to **Update with current settings**, **Rename**, **Share to team folder** or **Delete**. Saving keeps everything except **Enable filter**.
+- **Team presets:** looks shared by colleagues appear in a **TEAM** row underneath. Right-click one to copy it to your own presets.
 - **Enable filter**, **Visible**, **Halftone**.
 - Projection/surface and cut: line pattern, colour, weight; foreground and background patterns and colours; transparency.
 - **Copy overrides from another filter…** takes the look from a filter already on the view.
@@ -92,13 +92,13 @@ The window has three columns: **what to filter** on the left, **the rules** in t
   - **Edit everywhere**: your changes update that filter in every view and template that uses it (the bar shows how many).
   - **Duplicate & edit**: work on a copy; the original stays as it is.
 - Right-click a filter: **Remove from this view**, **Save as preset**.
-- **Saved selections:** build rules, then click **Save as selection ▾ → New selection…** next to Select matches. It saves the rules (not the elements) to your profile. In the **Selections** tab, click one to select what matches now in **This view** or the **Whole model** (switch at the top); Ctrl+click adds to the selection. They work in every project. Team selections from the FIMBLE folder are listed underneath; right-click one of yours and choose **Copy to FIMBLE** to share it. Clicking a selection also shows its rules in the editor.
+- **Saved selections:** build rules, then click **Save as selection ▾ → New selection…** next to Select matches. It saves the rules (not the elements) to your profile. In the **Selections** tab, click one to select what matches now in **This view** or the **Whole model** (switch at the top); Ctrl+click adds to the selection. They work in every project. Team selections from the team folder are listed underneath; right-click one of yours and choose **Copy to team** to share it. Clicking a selection also shows its rules in the editor.
 - **Selections with several parts:** one selection can combine different categories with different rules, e.g. doors with Type Mark X *and* walls with height Y. Build the walls rule, then **Save as selection ▾ → Add as a part to → sel_1** (or right-click sel_1 → **Add the editor's rules as a part**). Right-click to edit, remove or split parts.
 - **Create schedule** (footer, or right-click a project filter): a schedule of the filter's categories with Family and Type, the rule parameters and Count. AND rules filter it; Revit schedules can't do OR, so a filter with OR gives everything in those categories, sorted. Several categories make a Multi-Category schedule grouped by category.
 - **Several at once:** tick filters, then right-click any filter: **Remove ticked from this view**, **Remove ticked from view template…** (permanent, for every view using that template), **Save ticked as presets**, **Clear ticks**. Export ticked filters from **Import ▾**.
 - Filters made in Revit with groups inside groups open with read-only rules; you can still change their look.
 
-### 6. Import, presets and the Fimble filters
+### 6. Import, presets and the team folder
 
 **Import ▾** on the Project filters tab:
 
@@ -107,25 +107,22 @@ The window has three columns: **what to filter** on the left, **the rules** in t
 | **From another view…** | Pick a view or template, tick its filters: they come onto this view with that view's look. |
 | **From another open project…** | Copy filters from another model open in Revit. |
 | **From my presets…** | Your own saved filters (`%APPDATA%\NoahsArch\FilterCanvas\presets`). |
-| **From Fimble filters (team)…** | Fimble's shared filters (below). |
+| **From team folder…** | Your team's shared filters (below). |
 | **From file…** | A `.json` file someone sent you. |
 | **Save current as preset** | Saves the filter you're building (rules and look) to your presets. |
-| **Share current to Fimble filters (team)** | Saves it to the shared Fimble folder for everyone. |
+| **Share current to team folder** | Saves it to the shared team folder for everyone. |
 | **Export ticked filters…** | Tick filters in the list, save them to one `.json` file. |
 
 Before anything is imported you see a check list: what matched this project and what didn't (a missing parameter or line pattern is listed, not silently dropped). If a filter with the same name exists, choose **Import as copy**, **Use existing** or **Replace its rules**.
 
-**Fimble filters (team presets)**
+**The team folder (shared presets and selections)**
 
-Fimble's shared filters live in SharePoint:
+A team can share filters, looks and saved selections through one shared folder, for example a SharePoint library synced to each PC with OneDrive, or a network folder.
 
-`Fimble - Wiki - Documents > 02 Kick off > 02_TEMPLATE > FIMBLE filters`
-
-On Noah's PC that's `C:\OneDrive\Fimble B.V\Fimble - Wiki - Documents\02 Kick off\02_TEMPLATE\FIMBLE filters`.
-
-- Sync that SharePoint library to your PC with OneDrive (**Sync** or **Add shortcut to My files** in SharePoint).
-- NoFilter finds the folder by itself in the usual OneDrive places.
-- If it's somewhere else, open **Settings** in NoFilter and paste the folder path.
+- Open **Settings** in NoFilter (or click **Set up…** on the banner the first time) and use **Browse…** next to **Team folder**. Each person does this once on their own PC.
+- **My folder** in the same dialog is where your own presets and saved selections go. Leave it empty for the default, or pick a OneDrive folder to have them on every PC.
+- Shared items then show in the **TEAM** rows. Sharing to the team needs write access to the folder.
+- No folder set? Everything else works; the team rows stay empty.
 
 ---
 
