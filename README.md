@@ -18,7 +18,14 @@ You'll find a **NoahsArch Tools** panel on Revit's **Add-Ins** tab with one butt
 
 ## Updates
 
-When there's a new version, the Noah's Arch button changes to **Update available**. Open the Hub and click **Update**. The update downloads and installs by itself as soon as you close Revit; start Revit again afterwards.
+When there's a new version, the Noah's Arch button changes to **Update available**. Open the Hub: it shows the new version and a **What's new** link.
+
+1. Click **Install update**. The installer downloads in the background (you can keep working).
+2. The Hub says **Update ready – installs when you close Revit.** Close Revit whenever it suits you (every Revit window). Or click **Close Revit and install now**, save your work and close Revit straight away.
+3. The installer opens by itself, with your Revit versions ticked. Click through it. If Windows warns about an unknown publisher, choose **More info → Run anyway**.
+4. Start Revit again.
+
+**Not now** cancels; the Hub offers the update again the next time you start Revit. If the download doesn't work (for example no internet), click **Open releases page** and run the installer from there with Revit closed.
 
 To remove NoahsArch Tools: Windows **Settings → Apps → Installed apps → NoahsArch Tools → Uninstall**.
 
